@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="gallery" id="gallery"></div>
+
+      <span class="loader" id="loader" style="display: none"></span>
+
+      <button
+        type="button"
+        class="load-more"
+        id="load-more"
+        style="display: none"
+      >
+        Load more
+      </button>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
